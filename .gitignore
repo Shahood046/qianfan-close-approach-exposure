@@ -1,0 +1,20 @@
+# credentials and raw data (Space-Track terms forbid redistribution)
+.env
+data/
+# caches and working material that is not part of the release
+__pycache__/
+*.pkl
+*.pkl.gz
+ecphase_backup/
+release/
+HANDOFF.md
+SESSION_LOG_*.md
+FINDINGS.md
+PAPER_OUTLINE.md
+LITERATURE.md
+README_pilot.md
+FIGURE_AUDIT.md
+FIGURE_CAPTIONS.md
+manuscript/
+out/log_*
+out/altitude/

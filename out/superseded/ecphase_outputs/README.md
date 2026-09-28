@@ -1,0 +1,1 @@
+Result files of the run in the equation-of-centre phase variable, replaced on 2026-09-25 by the run in SGP4's mean argument of latitude (see PHASE_SWITCH.md). Superseded; not valid for the manuscript.

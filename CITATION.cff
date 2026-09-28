@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or these derived tables, please cite the paper and this repository."
+title: "Analysis code and derived tables for: Phase errors and close-approach exposure in the Qianfan constellation"
+type: software
+version: "0.9-pre-release"
+date-released: "2026-09-28"
+authors:
+  - family-names: "Sajid"
+    given-names: "Shahood"
+  - family-names: "Junaid"
+    given-names: "Ibrar"
+  - family-names: "Moeed"
+    given-names: "Abdul"
+repository-code: "https://github.com/Shahood046/qianfan-close-approach-exposure"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Phase errors and close-approach exposure in the Qianfan constellation: an empirical reconstruction from public orbital data"
+  authors:
+    - family-names: "Sajid"
+      given-names: "Shahood"
+    - family-names: "Junaid"
+      given-names: "Ibrar"
+    - family-names: "Moeed"
+      given-names: "Abdul"
+  year: 2026
+  notes: "In preparation; journal, volume and DOI to be added."

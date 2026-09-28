@@ -1,0 +1,5 @@
+NORAD_CAT_ID,rule
+62246,most turning points
+62796,median turning-point amplitude
+68651,"arrived in the last 90 days of the record, largest first-day |eps|"
+62790,widest range of unwrapped eps
