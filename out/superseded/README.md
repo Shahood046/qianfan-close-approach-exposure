@@ -9,6 +9,7 @@ figure numbers (for example, `fig6_crossing_model.png` was the pilot version of 
 pilot version of Fig. 11). They are kept only for the record.
 
 Also moved 2026-09-28: fig_phase_trajectories.png (the pre-redesign Fig. 10; replaced by fig10_phase_trajectories.png).
-Also moved 2026-09-28: residuals_vs_age.png (pilot version of Fig. 3, replaced by fig3_residuals.png). The pilot build-out figure is no longer written to fig1_buildout.png (06_figures.py now writes superseded/pilot_fig1_buildout.png); manuscript Fig. 1 is drawn by 30_data_figs.py.
+Also moved 2026-09-28: residuals_vs_age.png (pilot version of Fig. 3, replaced by fig3_residuals.png). The pilot build-out figure is no longer written to fig1_buildout.png (06_figures.py now writes superseded/pilot_fig1_buildout.png); manuscript Fig. 1 is drawn by 30_data_figs.py.
+
 Files: fig3_polar_pairs, fig4_corridor, fig5_persistence, fig6_crossing_model, fig7_episodes, fig8_per_angle, fig9_concentration.
 Moved 2026-09-28 (audit: FIGURE_AUDIT.md). Nothing was deleted.

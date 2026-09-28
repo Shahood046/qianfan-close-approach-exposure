@@ -148,9 +148,12 @@ def main():
     lines += ["", "## Checks", "", f"- credential values searched for in all text files: {len(secrets)} value(s) taken from .env, {hits} file(s) containing one",
               "- raw element-set columns in released CSV files: none" if not any("raw element" in f for f in fails) else "- raw element-set columns: FOUND (see failures)",
               "- forbidden-name scan, script compilation and README figure-table check run on the staged tree",
-              "", "## Files (SHA-256)", "", "| File | Bytes | SHA-256 |", "|---|---|---|"]
+              "", "## Files (SHA-256 of the content as committed to git: text files with LF line endings)", "", "| File | Bytes | SHA-256 |", "|---|---|---|"]
     for p in files:
-        lines.append(f"| {p.relative_to(REL).as_posix()} | {p.stat().st_size} | {hashlib.sha256(p.read_bytes()).hexdigest()[:16]}... |")
+        data = p.read_bytes()
+        if p.suffix.lower() not in {".png", ".gz"}:
+            data = data.replace(b"\r\n", b"\n")      # as git stores text files, so the hash matches the public repository
+        lines.append(f"| {p.relative_to(REL).as_posix()} | {len(data)} | {hashlib.sha256(data).hexdigest()[:16]}... |")
     (REL / "RELEASE_MANIFEST.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"release tree: {len(files)} files, {total / 1e6:.1f} MB; secrets checked: {len(secrets)}")
     print("RESULT:", "all checks passed" if not fails else f"{len(fails)} problem(s)")
